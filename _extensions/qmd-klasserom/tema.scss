@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*-- scss:default --*/
+
+// Fargar
+$color-blå: #007096;
+$color-grå: #D0D0CE;
+$color-lys-grå: lighten($color-grå, 15%);
+$color-svart: #2C2A29;
+$color-grønn: #50A684;
+
+$body-color: $color-svart;
+$body-bg: $color-lys-grå;
+$presentation-heading-color: $color-blå;
+$btn-code-copy-color: $color-grå;
+
+// Fontar
+$font-family-monospace: "Roboto Mono", monospace !default;
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+$presentation-heading-font: "Roboto Slab", sans-serif !default;
+
+$presentation-font-size-root: 30px;
+
+//$presentation-title-slide-text-align: left;
+$presentation-heading-font-weight: 400;
+$code-block-font-size: 0.80em;
+$code-block-height: 100%;
+$code-block-bg: $color-svart;
+$code-block-bg-padding: 0.5em;
+$code-block-padding-left: 1em;
+
+
+/*-- scss:rules --*/
+
+.reveal .progress {
+    color: $color-grønn;
+}
+
+
+#title-slide > h1 {
+    //text-align: left;
+    font-weight: 300;
+    color: $body-color;
+  }
+  
+  #title-slide > p {
+    color: $color-grønn;
+    font-size: 20px;
+    //text-align: left;
+    font-weight: 300;
+  }
+  
+  #title-slide .subtitle {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  #title-slide .quarto-title-author-name {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: down;
+    padding-top: 30%;
+  }
